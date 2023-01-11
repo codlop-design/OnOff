@@ -169,209 +169,66 @@ var swiper = new Swiper(".hero__slider--activation", {
     });
 
     
-    swiper = new Swiper(".product__swiper--column4__style2", {
-        slidesPerView: 4,
-        loop: !0,
-        clickable: !0,
-        spaceBetween: 30,
-        breakpoints: {
-            1366: {
-                slidesPerView: 4
-            },
-            1200: {
-                slidesPerView: 3
-            },
-            992: {
-                slidesPerView: 2
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            0: {
-                slidesPerView: 1
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        }
-    }),
-    // swiper = new Swiper(".single__product--nav", {
-    //     loop: !0,
-    //     spaceBetween: 20,
-    //     slidesPerView: 5,
-    //     freeMode: !0,
-    //     watchSlidesProgress: !0,
-    //     breakpoints: {
-    //         992: {
-    //             spaceBetween: 20
-    //         },
-    //         768: {
-    //             slidesPerView: 5,
-    //             spaceBetween: 15
-    //         },
-    //         480: {
-    //             slidesPerView: 4
-    //         },
-    //         320: {
-    //             slidesPerView: 3
-    //         },
-    //         200: {
-    //             slidesPerView: 2
-    //         },
-    //         0: {
-    //             slidesPerView: 1
-    //         }
-    //     },
-    //     navigation: {
-    //         nextEl: ".swiper-button-next",
-    //         prevEl: ".swiper-button-prev"
-    //     }
-    // }),
-    // swiper2 = new Swiper(".single__product--preview", {
-    //     loop: !0,
-    //     spaceBetween: 10,
-    //     thumbs: {
-    //         swiper: swiper
-    //     }
-    // }),
-    swiper = new Swiper(".product__swiper--column1", {
-        slidesPerView: 4,
-        loop: !1,
-        clickable: !0,
-        spaceBetween: 15,
-        direction: "vertical",
-        navigation: {
-            nextEl: ".small__product .swiper-button-next",
-            prevEl: ".small__product .swiper-button-prev"
-        }
-    }),
-    swiper = new Swiper(".blog__swiper--activation", {
-        slidesPerView: 3,
-        loop: !0,
-        clickable: !0,
-        spaceBetween: 30,
-        breakpoints: {
-            992: {
-                slidesPerView: 3
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            560: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            0: {
-                slidesPerView: 1
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        }
-    }),
-    swiper = new Swiper(".testimonial__swiper--activation", {
-        slidesPerView: 2,
-        loop: !0,
-        clickable: !0,
-        spaceBetween: 30,
-        breakpoints: {
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            0: {
-                slidesPerView: 1
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        }
-    }),
-    swiper = new Swiper(".quickview__swiper--activation", {
-        slidesPerView: 1,
-        loop: !0,
-        clickable: !0,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: !0
-        }
-    }),
-    swiper = new Swiper(".product__media--nav", {
-        loop: !0,
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: !0,
-        watchSlidesProgress: !0,
-        breakpoints: {
-            480: {
-                slidesPerView: 4
-            },
-            200: {
-                slidesPerView: 3
-            },
-            0: {
-                slidesPerView: 1
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        }
-    }),
-    swiper2 = new Swiper(".product__media--preview", {
-        loop: !0,
-        spaceBetween: 10,
-        thumbs: {
-            swiper: swiper
-        }
-    }),
-    swiper3 = new Swiper(".testimonial__active--one", {
-        loop: !0,
-        spaceBetween: 20,
-        slidesPerView: 5,
-        centeredSlides: !0,
-        freeMode: !0,
-        watchSlidesProgress: !0,
-        breakpoints: {
-            768: {
-                slidesPerView: 5
-            },
-            576: {
-                slidesPerView: 3
-            },
-            200: {
-                slidesPerView: 3
-            },
-            0: {
-                slidesPerView: 1
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        }
-    }),
-    swiper2 = new Swiper(".testimonial__active--two", {
-        loop: !0,
-        spaceBetween: 10,
-        thumbs: {
-            swiper: swiper3
-        }
-    });
+    // thumbs-img
+const galleryThumbs = new Swiper('.thumbs .swiper', {
+    direction: 'vertical',
+    spaceBetween: 10,
+    slidesPerView: 5,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: '.thumbs .swiper-button-next',
+        prevEl: '.thumbs .swiper-button-prev',
+    },
+});
+
+// thumbs-img
+const galleryMain = new Swiper('.view-div .swiper', {
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    thumbs: {
+        swiper: galleryThumbs
+    }
+});
+
+// galleryMain.on('slideChangeTransitionStart', function() {
+//     galleryThumbs.slideTo(galleryMain.activeIndex);
+//   });
+  
+//   galleryThumbs.on('transitionStart', function(){
+//     galleryMain.slideTo(galleryThumbs.activeIndex);
+//   });
+
+
+  // zoom img
+var options1 = {
+    offset: {
+        vertical: 0, 
+        horizontal: 10
+    }
+};
+
+var options2 = {
+    fillContainer: true,
+    offset: {
+        vertical: 0,
+        horizontal: 10
+    },
+    "zoomPosition":"left",
+};
+
+new ImageZoom(document.getElementById("img-1"), options2);
+new ImageZoom(document.getElementById("img-2"), options2);
+new ImageZoom(document.getElementById("img-3"), options2);
+new ImageZoom(document.getElementById("img-4"), options2);
+    
+
 const tab = function (wrapper) {
     let tabContainer = document.querySelector(wrapper);
     tabContainer && tabContainer.addEventListener("click", (function (evt) {
@@ -513,29 +370,7 @@ window.addEventListener("load", (function () {
         window.outerWidth >= 768 && (item.classList.remove("active"), item.querySelector(".footer__widget--inner").style.display = "")
     })), accordion && footerWidgetAccordion()
 }));
-const customLightboxHTML = '<div id="glightbox-body" class="glightbox-container">\n    <div class="gloader visible"></div>\n    <div class="goverlay"></div>\n    <div class="gcontainer">\n    <div id="glightbox-slider" class="gslider"></div>\n    <button class="gnext gbtn" tabindex="0" aria-label="Next" data-customattribute="example">{nextSVG}</button>\n    <button class="gprev gbtn" tabindex="1" aria-label="Previous">{prevSVG}</button>\n    <button class="gclose gbtn" tabindex="2" aria-label="Close">{closeSVG}</button>\n    </div>\n    </div>',
-    lightbox = GLightbox({
-        touchNavigation: !0,
-        lightboxHTML: customLightboxHTML,
-        loop: !0
-    }),
-    wrapper = document.getElementById("funfactId");
-if (wrapper) {
-    const counters = wrapper.querySelectorAll(".js-counter"),
-        duration = 1e3;
-    let isCounted = !1;
-    document.addEventListener("scroll", (function () {
-        const wrapperPos = wrapper.offsetTop - window.innerHeight;
-        !isCounted && window.scrollY > wrapperPos && (counters.forEach(counter => {
-            const countTo = counter.dataset.count,
-                countPerMs = countTo / duration;
-            let currentCount = 0;
-            const countInterval = setInterval((function () {
-                currentCount >= countTo && clearInterval(countInterval), counter.textContent = Math.round(currentCount), currentCount += countPerMs
-            }), 1)
-        }), isCounted = !0)
-    }))
-}
+
 const offcanvasHeader = function () {
     const offcanvasOpen = document.querySelector(".offcanvas__header--menu__open--btn"),
         offcanvasClose = document.querySelector(".offcanvas__close--btn"),
