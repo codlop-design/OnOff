@@ -206,27 +206,7 @@ const galleryMain = new Swiper('.view-div .swiper', {
 //   });
 
 
-  // zoom img
-var options1 = {
-    offset: {
-        vertical: 0, 
-        horizontal: 10
-    }
-};
 
-var options2 = {
-    fillContainer: true,
-    offset: {
-        vertical: 0,
-        horizontal: 10
-    },
-    "zoomPosition":"left",
-};
-
-new ImageZoom(document.getElementById("img-1"), options2);
-new ImageZoom(document.getElementById("img-2"), options2);
-new ImageZoom(document.getElementById("img-3"), options2);
-new ImageZoom(document.getElementById("img-4"), options2);
     
 
 const tab = function (wrapper) {
@@ -445,3 +425,63 @@ const newsletterPopup = function () {
     })
 };
 newsletterPopup();
+
+
+$(document).on('change','#sign-user', function(){
+    $('.store-inputs').hide();
+});
+
+$(document).on('change','#sign-tajer', function(){
+    $('.store-inputs').show();
+});
+
+// toogle password
+$('.toogle-password').on('click', function (event) {
+    event.preventDefault();
+    $(this).toggleClass('fa-eye');
+    $(this).toggleClass('fa-eye-slash');
+    var parent = $(this).parent();
+    var type = parent.find('input').attr('type') == 'password' ? 'text' : 'password';
+    parent.find('input').attr('type', type);
+});
+
+// checkout steps
+$(document).on('click', '.choose--address .save-btn', function () {
+    $('.address-li').hide();
+    $('.confirmed-address').show();
+    $('.products-checkout').show();
+});
+
+$(document).on('click', '.products-checkout .save-btn', function () {
+    $('.products-li').hide();
+    $('.confirmed-products').show();
+    $('.choose-payment').show();
+});
+
+$(document).on('click', '.choose-payment .save-btn', function () {
+    $('.payment-li').hide();
+    $('.confirmed-payment').show();
+    $('.continue-checkout').prop("disabled", false);
+});
+
+  // zoom img
+  var options1 = {
+    offset: {
+        vertical: 0, 
+        horizontal: 10
+    }
+};
+
+var options2 = {
+    fillContainer: true,
+    offset: {
+        vertical: 0,
+        horizontal: 10
+    },
+    "zoomPosition":"left",
+};
+
+new ImageZoom(document.getElementById("img-1"), options2);
+new ImageZoom(document.getElementById("img-2"), options2);
+new ImageZoom(document.getElementById("img-3"), options2);
+new ImageZoom(document.getElementById("img-4"), options2);

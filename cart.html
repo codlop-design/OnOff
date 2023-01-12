@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>متجر ادوات منزلية</title>
+    <meta name="description" content="OnOff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/js/plugins/select2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+
+    <header class="header__section">
+        <div class="main__header header__sticky">
+            <div class="container-fluid">
+                <div class="main__header--inner position__relative d-flex justify-content-between align-items-center">
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="main__logo">
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="index.html"><img
+                                    class="main__logo--img" src="assets/img/logo/logo.png" alt="logo-img"></a></h1>
+                    </div>
+                    <div class="header__menu style3 d-none d-lg-block">
+                        <nav class="header__menu--navigation">
+                            <ul class="header__menu--wrapper d-flex">
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link active" href="index.html">الرئيسية
+                                    </a>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">تكييف وتدفئه
+                                        <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                                            height="7.41" viewBox="0 0 12 7.41">
+                                            <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
+                                                transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">مكيف اسبلت</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">مكيف شباك</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">مكيف دولابي</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">مكيف كاسيت</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">مكيف دكت</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">مكيف معلق جداري</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">مكيف نقال</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">دفاية</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">ثلاجات و فريزرات
+                                        <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                                            height="7.41" viewBox="0 0 12 7.41">
+                                            <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
+                                                transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">ثلاجة باب واحد</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">ثلاجة بابين</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">ثلاجة دولابي</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">ثلاجة عرض</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">فريزر ارضي</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">فريزر عامودي</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">الغسالات والنشافات
+                                        <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                                            height="7.41" viewBox="0 0 12 7.41">
+                                            <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
+                                                transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">غسالة اوتوماتيك امامية</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">غسالة اوتوماتيك علوية</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">غسالة حوضين</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">غسالة صحون</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">الميكرويف والأفرن
+                                        <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                                            height="7.41" viewBox="0 0 12 7.41">
+                                            <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
+                                                transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">ميكرويف</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">فرن غاز</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">فرن كهرباء</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">ميكرويف بلت ان</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">فرن بلت ان</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">شفاط بلت ان</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">أدوات المطبخ
+                                        <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                                            height="7.41" viewBox="0 0 12 7.41">
+                                            <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
+                                                transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">ستائر</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">شواية كهربائية</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">غلايات الماء</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">أجهزة الكي</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">أجهزة تحضير الأطعمة والمشروبات</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">أجهزة القلي</a></li>
+                                        <li class="header__sub--menu__items"><a href="#"
+                                                class="header__sub--menu__link">أجهزة القهوة</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">تواصل معنا</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__account">
+                        <ul class="header__account--wrapper d-flex align-items-center">
+                            <li class="header__account--items d-none d-lg-block">
+                                <a class="header__account--btn" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class=" -user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <span class="visually-hidden">My account</span>
+                                </a>
+                            </li>
+                            <li class="header__account--items d-none d-lg-block">
+                                <a class="header__account--btn" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class=" -heart">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                    </svg>
+                                    <span class="items__count">3</span>
+                                </a>
+                            </li>
+                            <li class="header__account--items header__minicart--items">
+                                <a class="header__account--btn minicart__open--btn" href="javascript:void(0)"
+                                    data-offcanvas>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22.706" height="22.534"
+                                        viewBox="0 0 14.706 13.534">
+                                        <g transform="translate(0 0)">
+                                            <g>
+                                                <path data-name="Path 16787"
+                                                    d="M4.738,472.271h7.814a.434.434,0,0,0,.414-.328l1.723-6.316a.466.466,0,0,0-.071-.4.424.424,0,0,0-.344-.179H3.745L3.437,463.6a.435.435,0,0,0-.421-.353H.431a.451.451,0,0,0,0,.9h2.24c.054.257,1.474,6.946,1.555,7.33a1.36,1.36,0,0,0-.779,1.242,1.326,1.326,0,0,0,1.293,1.354h7.812a.452.452,0,0,0,0-.9H4.74a.451.451,0,0,1,0-.9Zm8.966-6.317-1.477,5.414H5.085l-1.149-5.414Z"
+                                                    transform="translate(0 -463.248)" fill="currentColor" />
+                                                <path data-name="Path 16788"
+                                                    d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
+                                                    transform="translate(-1.191 -466.622)" fill="currentColor" />
+                                                <path data-name="Path 16789"
+                                                    d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
+                                                    transform="translate(-2.875 -466.622)" fill="currentColor" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="items__count">2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__content_wrapper">
+        <section class="page-sec no-bg">
+            <div class="container-fluid">
+                <div class="cart-sec">
+                    <div class="cart-dts">
+                        <h3 class="title-page">
+                            سلة المشتريات
+                            <span>( 2 منتج )</span>
+                            <a href="index.html" class="outline-dark">متابعة التسوق</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="product-details.html" class="p-img">
+                                    <img src="assets/img/product/4.webp" alt="">
+                                </a>
+                                <div class="p-dts">
+                                    <h4>مكيف سبليت سوبر جنرال ’’بلاتينيوم’’ 30 بارد
+                                        <div class="flex-tab-tm">
+                                            <img src="assets/img/Tamara.webp" alt="">
+                                        </div>
+                                    </h4>
+                                    <div class="prodcut-price">
+                                        <p class="new-price">3,049 <em>ر.س</em></p>
+                                        <p class="old-price">
+                                            <b>3,499 <em>ر.س</em></b>
+                                            <span>خصم<em>12%</em></span>
+                                        </p>
+                                    </div>
+                                    <a href="products.html" class="store-name">
+                                        <i class="fa fa-store-alt"></i>
+                                        بست ون
+                                    </a>
+                                    <div class="btm-part">
+                                        <div class="flex-box">
+                                            <h4 class="t-p">الكمية:</h4>
+                                            <div class="p-quentity">
+                                                <select name="" class="form-select">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                    <option value="">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box">
+                                            <a href="#" class="add-whishlist">
+                                                <svg class="svg-icon" viewBox="0 0 25 25">
+                                                    <use xlink:href="#heart-svg"></use>
+                                                </svg>
+                                                أضف إلى المفضلة
+                                            </a>
+                                            <a href="#" class="delete-from-cart">
+                                                <svg class="svg-icon" viewBox="0 0 24 24">
+                                                    <use xlink:href="#trash-svg"></use>
+                                                </svg>
+                                                حذف من العربة
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="product-details.html" class="p-img">
+                                    <img src="assets/img/product/9.jpg" alt="">
+                                </a>
+                                <div class="p-dts">
+                                    <h4>مكيف سبليت سوبر جنرال ’’بلاتينيوم’’ 30 بارد
+                                        <div class="flex-tab-tm">
+                                            <img src="assets/img/tabby.png" alt="">
+                                        </div>
+                                    </h4>
+                                    <div class="prodcut-price">
+                                        <p class="new-price">3,049 <em>ر.س</em></p>
+                                        <p class="old-price">
+                                            <b>3,499 <em>ر.س</em></b>
+                                            <span>خصم<em>12%</em></span>
+                                        </p>
+                                    </div>
+                                    <a href="products.html" class="store-name">
+                                        <i class="fa fa-store-alt"></i>
+                                        بست ون
+                                    </a>
+                                    <div class="btm-part">
+                                        <div class="flex-box">
+                                            <h4 class="t-p">الكمية:</h4>
+                                            <div class="p-quentity">
+                                                <select name="" class="form-select">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                    <option value="">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box">
+                                            <a href="#" class="add-whishlist">
+                                                <svg class="svg-icon" viewBox="0 0 25 25">
+                                                    <use xlink:href="#heart-svg"></use>
+                                                </svg>
+                                                أضف إلى المفضلة
+                                            </a>
+                                            <!-- <a href="#" class="add-whishlist active">
+                                                    <svg class="svg-icon" viewBox="0 0 25 25">
+                                                        <use xlink:href="#heart-svg"></use>
+                                                    </svg>
+                                                    تم الإضافة
+                                                </a> -->
+                                            <a href="#" class="delete-from-cart">
+                                                <svg class="svg-icon" viewBox="0 0 24 24">
+                                                    <use xlink:href="#trash-svg"></use>
+                                                </svg>
+                                                حذف من العربة
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart-total">
+                        <div class="totals-div">
+                            <div class="coupon">
+                                <input type="text" placeholder="ادخل كود الخصم">
+                                <button type="button">تطبيق</button>
+                            </div>
+                            <h5>ملخص الطلب</h5>
+                            <h6>
+                                المجموع الفرعي
+                                <p>6,098 <span>ر.س</span></p>
+                            </h6>
+                            <h6 class="discount-coupon">
+                                كوبون
+                                <p>-50 <span>ر.س</span></p>
+                            </h6>
+                            <h6>
+                                رسوم التوصيل
+                                <p>--</p>
+                            </h6>
+                            <h6 class="total-price">
+                                إجمالي المبلغ
+                                <p>6,048 <span>ر.س</span></p>
+                            </h6>
+                            <p class="tax-t">شامل ضريبة القيمة المضافة</p>
+                            <a href="checkout.html" class="continue-checkout">تابع عملية الشراء</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__section footer__bg5 footer__color--style">
+        <div class="container-fluid">
+            <div class="main__footer">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-10">
+                        <div class="footer__widget">
+                            <h2 class="footer__widget--title">عن المتجر <button class="footer__widget--button"
+                                    aria-label="footer widget button"></button>
+                                <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                    width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                                    <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                        transform="translate(-6 -8.59)" fill="currentColor"></path>
+                                </svg>
+                            </h2>
+                            <div class="footer__widget--inner">
+                                <p class="footer__widget--desc">منصة الكترونية تتكون من موقع وتطبيق تقدم خدمات للعميل
+                                    لتسهيل شراء الأجهزة المنزلية وحل مشكلة البعدين الجغرافي والزمني وتسريع وتحسين كفاءة
+                                    الخدمة المقدمة في المجال الاجهزة المنزلية</p>
+                                <ul class="social__share footer__social d-flex">
+                                    <li class="social__share--list">
+                                        <a class="social__share--icon__style2" target="_blank"
+                                            href="https://www.facebook.com/">
+                                            <svg width="11" height="17" viewBox="0 0 9 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.62891 8.625L8.01172 6.10938H5.57812V4.46875C5.57812 3.75781 5.90625 3.10156 7 3.10156H8.12109V0.941406C8.12109 0.941406 7.10938 0.75 6.15234 0.75C4.15625 0.75 2.84375 1.98047 2.84375 4.16797V6.10938H0.601562V8.625H2.84375V14.75H5.57812V8.625H7.62891Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                            <span class="visually-hidden">Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="social__share--list">
+                                        <a class="social__share--icon__style2" target="_blank"
+                                            href="https://twitter.com/">
+                                            <svg width="16" height="14" viewBox="0 0 14 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.5508 2.90625C13.0977 2.49609 13.5898 2.00391 13.9727 1.42969C13.4805 1.64844 12.9062 1.8125 12.332 1.86719C12.9336 1.51172 13.3711 0.964844 13.5898 0.28125C13.043 0.609375 12.4141 0.855469 11.7852 0.992188C11.2383 0.417969 10.5 0.0898438 9.67969 0.0898438C8.09375 0.0898438 6.80859 1.375 6.80859 2.96094C6.80859 3.17969 6.83594 3.39844 6.89062 3.61719C4.51172 3.48047 2.37891 2.33203 0.957031 0.609375C0.710938 1.01953 0.574219 1.51172 0.574219 2.05859C0.574219 3.04297 1.06641 3.91797 1.85938 4.4375C1.39453 4.41016 0.929688 4.30078 0.546875 4.08203V4.10938C0.546875 5.50391 1.53125 6.65234 2.84375 6.92578C2.625 6.98047 2.35156 7.03516 2.10547 7.03516C1.91406 7.03516 1.75 7.00781 1.55859 6.98047C1.91406 8.12891 2.98047 8.94922 4.23828 8.97656C3.25391 9.74219 2.02344 10.207 0.683594 10.207C0.4375 10.207 0.21875 10.1797 0 10.1523C1.25781 10.9727 2.76172 11.4375 4.40234 11.4375C9.67969 11.4375 12.5508 7.08984 12.5508 3.28906C12.5508 3.15234 12.5508 3.04297 12.5508 2.90625Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                            <span class="visually-hidden">Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="social__share--list">
+                                        <a class="social__share--icon__style2" target="_blank"
+                                            href="https://www.instagram.com/">
+                                            <svg width="16" height="15" viewBox="0 0 14 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.125 3.60547C5.375 3.60547 3.98047 5.02734 3.98047 6.75C3.98047 8.5 5.375 9.89453 7.125 9.89453C8.84766 9.89453 10.2695 8.5 10.2695 6.75C10.2695 5.02734 8.84766 3.60547 7.125 3.60547ZM7.125 8.80078C6.00391 8.80078 5.07422 7.89844 5.07422 6.75C5.07422 5.62891 5.97656 4.72656 7.125 4.72656C8.24609 4.72656 9.14844 5.62891 9.14844 6.75C9.14844 7.89844 8.24609 8.80078 7.125 8.80078ZM11.1172 3.49609C11.1172 3.08594 10.7891 2.75781 10.3789 2.75781C9.96875 2.75781 9.64062 3.08594 9.64062 3.49609C9.64062 3.90625 9.96875 4.23438 10.3789 4.23438C10.7891 4.23438 11.1172 3.90625 11.1172 3.49609ZM13.1953 4.23438C13.1406 3.25 12.9219 2.375 12.2109 1.66406C11.5 0.953125 10.625 0.734375 9.64062 0.679688C8.62891 0.625 5.59375 0.625 4.58203 0.679688C3.59766 0.734375 2.75 0.953125 2.01172 1.66406C1.30078 2.375 1.08203 3.25 1.02734 4.23438C0.972656 5.24609 0.972656 8.28125 1.02734 9.29297C1.08203 10.2773 1.30078 11.125 2.01172 11.8633C2.75 12.5742 3.59766 12.793 4.58203 12.8477C5.59375 12.9023 8.62891 12.9023 9.64062 12.8477C10.625 12.793 11.5 12.5742 12.2109 11.8633C12.9219 11.125 13.1406 10.2773 13.1953 9.29297C13.25 8.28125 13.25 5.24609 13.1953 4.23438ZM11.8828 10.3594C11.6914 10.9062 11.2539 11.3164 10.7344 11.5352C9.91406 11.8633 8 11.7812 7.125 11.7812C6.22266 11.7812 4.30859 11.8633 3.51562 11.5352C2.96875 11.3164 2.55859 10.9062 2.33984 10.3594C2.01172 9.56641 2.09375 7.65234 2.09375 6.75C2.09375 5.875 2.01172 3.96094 2.33984 3.14062C2.55859 2.62109 2.96875 2.21094 3.51562 1.99219C4.30859 1.66406 6.22266 1.74609 7.125 1.74609C8 1.74609 9.91406 1.66406 10.7344 1.99219C11.2539 2.18359 11.6641 2.62109 11.8828 3.14062C12.2109 3.96094 12.1289 5.875 12.1289 6.75C12.1289 7.65234 12.2109 9.56641 11.8828 10.3594Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                            <span class="visually-hidden">Instagram</span>
+                                        </a>
+                                    </li>
+                                    <li class="social__share--list">
+                                        <a class="social__share--icon__style2" target="_blank"
+                                            href="https://www.pinterest.com/">
+                                            <svg width="16" height="17" viewBox="0 0 14 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.5625 7.75C13.5625 4.00391 10.5273 0.96875 6.78125 0.96875C3.03516 0.96875 0 4.00391 0 7.75C0 10.6484 1.77734 13.082 4.29297 14.0664C4.23828 13.5469 4.18359 12.7266 4.32031 12.125C4.45703 11.6055 5.11328 8.76172 5.11328 8.76172C5.11328 8.76172 4.92188 8.35156 4.92188 7.75C4.92188 6.82031 5.46875 6.10938 6.15234 6.10938C6.72656 6.10938 7 6.54688 7 7.06641C7 7.64062 6.61719 8.51562 6.42578 9.33594C6.28906 9.99219 6.78125 10.5391 7.4375 10.5391C8.64062 10.5391 9.57031 9.28125 9.57031 7.44922C9.57031 5.80859 8.39453 4.6875 6.75391 4.6875C4.8125 4.6875 3.69141 6.13672 3.69141 7.61328C3.69141 8.21484 3.91016 8.84375 4.18359 9.17188C4.23828 9.22656 4.23828 9.30859 4.23828 9.36328C4.18359 9.58203 4.04688 10.0469 4.04688 10.1289C4.01953 10.2656 3.9375 10.293 3.80078 10.2383C2.95312 9.82812 2.43359 8.59766 2.43359 7.58594C2.43359 5.45312 3.99219 3.48438 6.91797 3.48438C9.26953 3.48438 11.1016 5.17969 11.1016 7.42188C11.1016 9.74609 9.625 11.6328 7.57422 11.6328C6.89062 11.6328 6.23438 11.2773 6.01562 10.8398C6.01562 10.8398 5.6875 12.1523 5.60547 12.4531C5.44141 13.0547 5.03125 13.793 4.75781 14.2305C5.38672 14.4492 6.07031 14.5312 6.78125 14.5312C10.5273 14.5312 13.5625 11.4961 13.5625 7.75Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                            <span class="visually-hidden">Pinterest</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer__widget">
+                            <h2 class="footer__widget--title ">حسابي <button class="footer__widget--button"
+                                    aria-label="footer widget button"></button>
+                                <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                    width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                                    <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                        transform="translate(-6 -8.59)" fill="currentColor"></path>
+                                </svg>
+                            </h2>
+                            <ul class="footer__widget--menu footer__widget--inner">
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">السلة</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">تسجيل الدخول</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">انشاء حساب</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">المفضلة</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer__widget">
+                            <h2 class="footer__widget--title ">معلومات عامة<button class="footer__widget--button"
+                                    aria-label="footer widget button"></button>
+                                <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                    width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                                    <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                        transform="translate(-6 -8.59)" fill="currentColor"></path>
+                                </svg>
+                            </h2>
+                            <ul class="footer__widget--menu footer__widget--inner">
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="#">من
+                                        نحن</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">المدونة</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">الشحن والدفع</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">الضمان والارجاع</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">سياسة الخصوصية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer__widget">
+                            <h2 class="footer__widget--title ">التصنيفات <button class="footer__widget--button"
+                                    aria-label="footer widget button"></button>
+                                <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                    width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                                    <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                        transform="translate(-6 -8.59)" fill="currentColor"></path>
+                                </svg>
+                            </h2>
+                            <ul class="footer__widget--menu footer__widget--inner grid-widget">
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">تكييف وتدفئه</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">ثلاجات وفريزرات</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">الغسالات والنشافات</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">الميكرويف والأفرن</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                        href="#">ادوات المطبخ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container-fluid">
+                <div class="footer__bottom--inenr">
+                    <p>جميع الحقوق محفوظة © OnOff - برمجة وتصميم <a href="https://codlop.sa/ar"
+                            target="_blank">Codlop</a>
+                    </p>
+                    <div class="footer__payment">
+                        <img src="assets/img/icon/visa.webp" alt="">
+                        <img src="assets/img/icon/mastercard.webp" alt="">
+                        <img src="assets/img/icon/vapulus.png" alt="">
+                        <img src="assets/img/icon/mada.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll top bar -->
+    <button id="scroll__top"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                d="M112 244l144-144 144 144M256 120v292" /></svg>
+    </button>
+
+    <script src="assets/js/plugins/jquery.min.js"></script>
+    <script src="assets/js/vendor/popper.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/glightbox.min.js"></script>
+    <script src="assets/js/plugins/select2.full.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
+<div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="cart-svg">
+            <g xmlns="http://www.w3.org/2000/svg">
+                <g id="layer1_00000156585020532866806800000010821411658642302631_" transform="translate(-2 -372.644)">
+                    <g id="g56919" transform="translate(0 80)">
+                        <path id="path55988"
+                            d="m4.41 307.693c-5.904 12.837-.288 28.03 12.546 33.941l30.591 14.096c11.447 5.695 10.175 3.333 11.897 11.697 27.718 97.195 55.833 194.693 83.777 291.969 10.733 40.248 47.471 68.481 89.125 68.481h149.708c41.485 0 78.506-26.725 91.624-66.082 13.254-52.47 26.36-105.406 39.489-158.055 3.43-13.722-4.92-27.624-18.645-31.041-13.721-3.43-27.624 4.92-31.041 18.645l-38.439 154.407c-6.264 18.541-23.402 30.941-42.988 30.941h-149.708c-18.713 0-34.867-12.41-39.689-30.492-28.72-100.222-60.088-209.274-83.077-289.12-4.647-22.569-22.692-38.912-39.239-47.186-10.547-4.972-21.339-9.853-31.991-14.745-14.825-6.004-26.08-.974-33.94 12.544z" />
+                        <path id="circle55990"
+                            d="m283.513 779.051c0 14.134-11.458 25.593-25.593 25.593s-25.593-11.458-25.593-25.593 11.458-25.593 25.593-25.593 25.593 11.459 25.593 25.593z" />
+                        <path id="circle55992"
+                            d="m411.477 779.051c0 14.134-11.458 25.593-25.593 25.593s-25.593-11.458-25.593-25.593 11.458-25.593 25.593-25.593 25.593 11.459 25.593 25.593z" />
+                    </g>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="user-svg">
+            <g xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path
+                        d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="search-svg">
+            <path xmlns="http://www.w3.org/2000/svg"
+                d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" />
+        </symbol>
+        <symbol id="heart-svg">
+            <g xmlns="http://www.w3.org/2000/svg" data-name="01 align center">
+                <path
+                    d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z" />
+            </g>
+        </symbol>
+        <symbol id="logout-svg">
+            <g xmlns="http://www.w3.org/2000/svg" data-name="01 align center">
+                <path d="M2,21V3A1,1,0,0,1,3,2H8V0H3A3,3,0,0,0,0,3V21a3,3,0,0,0,3,3H8V22H3A1,1,0,0,1,2,21Z" />
+                <path
+                    d="M23.123,9.879,18.537,5.293,17.123,6.707l4.264,4.264L5,11l0,2,16.443-.029-4.322,4.322,1.414,1.414,4.586-4.586A3,3,0,0,0,23.123,9.879Z" />
+            </g>
+        </symbol>
+        <symbol id="buy-svg">
+            <g xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2">
+                <path
+                    d="m17.6 22.75h-11.2a3.748 3.748 0 0 1 -3.72-4.215l1.25-10a3.754 3.754 0 0 1 3.718-3.285h8.7a3.754 3.754 0 0 1 3.72 3.285l1.25 10a3.748 3.748 0 0 1 -3.718 4.215zm-9.954-16a2.253 2.253 0 0 0 -2.23 1.971l-1.25 10a2.249 2.249 0 0 0 2.234 2.529h11.2a2.249 2.249 0 0 0 2.232-2.529l-1.25-10a2.253 2.253 0 0 0 -2.23-1.971z" />
+                <path
+                    d="m16 6.75h-8a.75.75 0 0 1 -.75-.75v-1a3.755 3.755 0 0 1 3.75-3.75h2a3.755 3.755 0 0 1 3.75 3.75v1a.75.75 0 0 1 -.75.75zm-7.25-1.5h6.5v-.25a2.253 2.253 0 0 0 -2.25-2.25h-2a2.253 2.253 0 0 0 -2.25 2.25z" />
+                <path
+                    d="m12 14.75a3.755 3.755 0 0 1 -3.75-3.75v-1a.75.75 0 0 1 1.5 0v1a2.25 2.25 0 0 0 4.5 0v-1a.75.75 0 0 1 1.5 0v1a3.755 3.755 0 0 1 -3.75 3.75z" />
+            </g>
+        </symbol>
+        <symbol id="empty-cart-svg">
+            <defs id="defs3940">
+                <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3950">
+                    <path d="M 0,512 H 512 V 0 H 0 Z" id="path3948" />
+                </clipPath>
+            </defs>
+            <g id="g3942" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)">
+                <g id="g3944">
+                    <g id="g3946" clip-path="url(#clipPath3950)">
+                        <g id="g3952" transform="translate(202.5,37.5)">
+                            <path
+                                d="m 0,0 c 0,-16.568 -13.432,-30 -30,-30 -16.568,0 -30,13.432 -30,30 0,16.568 13.432,30 30,30 C -13.432,30 0,16.568 0,0 Z"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3954" />
+                        </g>
+                        <g id="g3956" transform="translate(180,37.5)">
+                            <path
+                                d="m 0,0 c 0,-4.143 -3.357,-7.5 -7.5,-7.5 -4.143,0 -7.5,3.357 -7.5,7.5 0,4.143 3.357,7.5 7.5,7.5 C -3.357,7.5 0,4.143 0,0"
+                                style="fill-opacity:1;fill-rule:nonzero;stroke:none" id="path3958" />
+                        </g>
+                        <g id="g3960" transform="translate(437,37.5)">
+                            <path
+                                d="m 0,0 c 0,-4.143 -3.357,-7.5 -7.5,-7.5 -4.143,0 -7.5,3.357 -7.5,7.5 0,4.143 3.357,7.5 7.5,7.5 C -3.357,7.5 0,4.143 0,0"
+                                style="fill-opacity:1;fill-rule:nonzero;stroke:none" id="path3962" />
+                        </g>
+                        <g id="g3964" transform="translate(459.5,37.5)">
+                            <path
+                                d="m 0,0 c 0,-16.568 -13.432,-30 -30,-30 -16.568,0 -30,13.432 -30,30 0,16.568 13.432,30 30,30 C -13.432,30 0,16.568 0,0 Z"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3966" />
+                        </g>
+                        <g id="g3968" transform="translate(105.5498,482.5498)">
+                            <path d="M 0,0 -21.216,-21.216"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3970" />
+                        </g>
+                        <g id="g3972" transform="translate(331,217.5)">
+                            <path
+                                d="m 0,0 c 0,-16.568 -13.432,-30 -30,-30 h -124.54 l -56.314,-31.93 c -4.72,-2.672 -7.646,-7.677 -7.646,-13.07 0,-8.271 6.729,-15 15,-15 h 332 c 8.284,0 15,-6.716 15,-15 0,-8.284 -6.716,-15 -15,-15 h -332 c -24.812,0 -45,20.187 -45,45 0,16.181 8.759,31.19 22.857,39.173 l 49.772,28.22 -59.025,230.779 C -239.983,243.092 -257.913,257 -278.5,257 h -30 c -8.284,0 -15,6.716 -15,15 0,8.284 6.716,15 15,15 h 30 c 34.307,0 64.189,-23.192 72.67,-56.4 L -146.852,0 H 84.857 c 20.559,0 38.504,13.934 43.597,33.852 L 173.5,210 h -374.062"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3974" />
+                        </g>
+                        <g id="g3976" transform="translate(216.2793,357.5)">
+                            <path d="M 0,0 H -67.938"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3978" />
+                        </g>
+                        <g id="g3980" transform="translate(486.5996,357.5)">
+                            <path d="M 0,0 H -240.32"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3982" />
+                        </g>
+                        <g id="g3984" transform="translate(166.2451,287.5)">
+                            <path d="M 0,0 H 302.453"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3986" />
+                        </g>
+                        <g id="g3988" transform="translate(397.54,217.5)">
+                            <path d="M 0,0 32.219,210"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3990" />
+                        </g>
+                        <g id="g3992" transform="translate(344.2812,217.5)">
+                            <path d="M 0,0 10.737,210"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3994" />
+                        </g>
+                        <g id="g3996" transform="translate(291.0234,217.5)">
+                            <path d="M 0,0 -10.746,210"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path3998" />
+                        </g>
+                        <g id="g4000" transform="translate(237.7656,217.5)">
+                            <path d="M 0,0 -32.229,210"
+                                style="fill:none;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                id="path4002" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="trash-svg">
+            <path d="m15.84 22.25h-7.68a3.05 3.05 0 0 1 -3-2.86l-.91-13.84a.76.76 0 0 1 .2-.55.77.77 0 0 1 .55-.25h14a.75.75 0 0 1 .75.8l-.87 13.84a3.05 3.05 0 0 1 -3.04 2.86zm-10-16 .77 13.05a1.55 1.55 0 0 0 1.55 1.45h7.68a1.56 1.56 0 0 0 1.55-1.45l.81-13z"/><path d="m21 6.25h-18a.75.75 0 0 1 0-1.5h18a.75.75 0 0 1 0 1.5z"/><path d="m15 6.25h-6a.76.76 0 0 1 -.75-.75v-1.8a2 2 0 0 1 1.95-1.95h3.6a2 2 0 0 1 1.95 2v1.75a.76.76 0 0 1 -.75.75zm-5.25-1.5h4.5v-1a.45.45 0 0 0 -.45-.45h-3.6a.45.45 0 0 0 -.45.45z"/><path d="m15 18.25a.76.76 0 0 1 -.75-.75v-8a.75.75 0 0 1 1.5 0v8a.76.76 0 0 1 -.75.75z"/><path d="m9 18.25a.76.76 0 0 1 -.75-.75v-8a.75.75 0 0 1 1.5 0v8a.76.76 0 0 1 -.75.75z"/><path d="m12 18.25a.76.76 0 0 1 -.75-.75v-8a.75.75 0 0 1 1.5 0v8a.76.76 0 0 1 -.75.75z"/>
+        </symbol>
+    </svg>
+</div>
