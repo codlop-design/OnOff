@@ -206,9 +206,6 @@ const galleryMain = new Swiper('.view-div .swiper', {
 //   });
 
 
-
-    
-
 const tab = function (wrapper) {
     let tabContainer = document.querySelector(wrapper);
     tabContainer && tabContainer.addEventListener("click", (function (evt) {
@@ -307,49 +304,6 @@ for (const el of closeEls) el.addEventListener("click", (function () {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible)
 }));
 
-function customAccordion(accordionWrapper, singleItem, accordionBody) {
-    let accoridonButtons;
-    document.querySelectorAll(accordionWrapper).forEach((function (item) {
-        item.addEventListener("click", (function (evt) {
-            let itemTarget = evt.target;
-            if (itemTarget.classList.contains("accordion__items--button") || itemTarget.classList.contains("widget__categories--menu__label")) {
-                let singleAccordionWrapper = itemTarget.closest(singleItem),
-                    singleAccordionBody = singleAccordionWrapper.querySelector(accordionBody);
-                singleAccordionWrapper.classList.contains("active") ? (singleAccordionWrapper.classList.remove("active"), slideUp(singleAccordionBody)) : (singleAccordionWrapper.classList.add("active"), slideDown(singleAccordionBody), getSiblings(singleAccordionWrapper).forEach((function (item) {
-                    let sibllingSingleAccordionBody = item.querySelector(accordionBody);
-                    item.classList.remove("active"), slideUp(sibllingSingleAccordionBody)
-                })))
-            }
-        }))
-    }))
-}
-document.addEventListener("click", e => {
-    e.target == document.querySelector(".modal.is-visible") && document.querySelector(".modal.is-visible").classList.remove(isVisible)
-}), document.addEventListener("keyup", e => {
-    "Escape" == e.key && document.querySelector(".modal.is-visible") && document.querySelector(".modal.is-visible").classList.remove(isVisible)
-}), customAccordion(".accordion__container", ".accordion__items", ".accordion__items--body"), customAccordion(".widget__categories--menu", ".widget__categories--menu__list", ".widget__categories--sub__menu");
-let accordion = !0;
-const footerWidgetAccordion = function () {
-    let footerWidgetContainer;
-    accordion = !1, document.querySelector(".main__footer").addEventListener("click", (function (evt) {
-        let singleItemTarget = evt.target;
-        if (singleItemTarget.classList.contains("footer__widget--button")) {
-            const footerWidget = singleItemTarget.closest(".footer__widget"),
-                footerWidgetInner = footerWidget.querySelector(".footer__widget--inner");
-            footerWidget.classList.contains("active") ? (footerWidget.classList.remove("active"), slideUp(footerWidgetInner)) : (footerWidget.classList.add("active"), slideDown(footerWidgetInner), getSiblings(footerWidget).forEach((function (item) {
-                const footerWidgetInner = item.querySelector(".footer__widget--inner");
-                item.classList.remove("active"), slideUp(footerWidgetInner)
-            })))
-        }
-    }))
-};
-window.addEventListener("load", (function () {
-    accordion && footerWidgetAccordion()
-})), window.addEventListener("resize", (function () {
-    document.querySelectorAll(".footer__widget").forEach((function (item) {
-        window.outerWidth >= 768 && (item.classList.remove("active"), item.querySelector(".footer__widget--inner").style.display = "")
-    })), accordion && footerWidgetAccordion()
-}));
 
 const offcanvasHeader = function () {
     const offcanvasOpen = document.querySelector(".offcanvas__header--menu__open--btn"),
@@ -407,24 +361,6 @@ const categoryMobileMenu = function () {
     }))
 };
 categoryMobileMenu();
-const newsletterPopup = function () {
-    let newsletterWrapper = document.querySelector(".newsletter__popup"),
-        newsletterCloseButton = document.querySelector(".newsletter__popup--close__btn"),
-        dontShowPopup = document.querySelector("#newsletter__dont--show"),
-        popuDontShowMode = localStorage.getItem("newsletter__show");
-    newsletterWrapper && null == popuDontShowMode && window.addEventListener("load", event => {
-        setTimeout((function () {
-            document.body.classList.add("overlay__active"), newsletterWrapper.classList.add("newsletter__show"), document.addEventListener("click", (function (event) {
-                event.target.closest(".newsletter__popup--inner") || (document.body.classList.remove("overlay__active"), newsletterWrapper.classList.remove("newsletter__show"))
-            })), newsletterCloseButton.addEventListener("click", (function () {
-                document.body.classList.remove("overlay__active"), newsletterWrapper.classList.remove("newsletter__show")
-            })), dontShowPopup.addEventListener("click", (function () {
-                dontShowPopup.checked ? localStorage.setItem("newsletter__show", !0) : localStorage.removeItem("newsletter__show")
-            }))
-        }), 3e3)
-    })
-};
-newsletterPopup();
 
 
 $(document).on('change','#sign-user', function(){
@@ -464,24 +400,14 @@ $(document).on('click', '.choose-payment .save-btn', function () {
     $('.continue-checkout').prop("disabled", false);
 });
 
-  // zoom img
-  var options1 = {
-    offset: {
-        vertical: 0, 
-        horizontal: 10
+$(document).on('change', '.checkout-tab #money-transfer', function () {
+    if ($('#money-transfer').prop('checked')) {
+        $('.checkout-tab .hint').show();
     }
-};
+});
 
-var options2 = {
-    fillContainer: true,
-    offset: {
-        vertical: 0,
-        horizontal: 10
-    },
-    "zoomPosition":"left",
-};
-
-new ImageZoom(document.getElementById("img-1"), options2);
-new ImageZoom(document.getElementById("img-2"), options2);
-new ImageZoom(document.getElementById("img-3"), options2);
-new ImageZoom(document.getElementById("img-4"), options2);
+$(document).on('change', '.checkout-tab #payzaty', function () {
+    if ($('#payzaty').prop('checked')) {
+        $('.checkout-tab .hint').hide();
+    }
+});
