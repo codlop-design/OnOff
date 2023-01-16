@@ -554,7 +554,7 @@ hr {
 }
 
 .primary__btn:hover {
-    background: var(--primary-color);
+    background: #d5094a;
     color: var(--text-white-color)
 }
 
