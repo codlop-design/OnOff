@@ -198,7 +198,9 @@ li {
 }
 
 hr {
-    border-top-width: 2px
+    border-top-width: 2px;
+    background-color: #ecedeb;
+    opacity: 1;
 }
 
 @media only screen and (min-width:576px) {
@@ -4822,14 +4824,18 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative
 }
 
-@media only screen and (min-width:1200px) {
-    .product__card--content {}
-}
 
 .product__card--title {
     margin-bottom: .8rem;
     font-weight: normal;
     font-size: 17px;
+}
+
+.product__card--title a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 @media only screen and (max-width:479px) {
@@ -4872,7 +4878,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     height: 3.5rem;
     line-height: 3.5rem;
-    border-radius: 5px;
+    border-radius: 2px;
     text-align: center;
     padding: 0 1.5rem;
     font-weight: normal;
@@ -11975,15 +11981,32 @@ details>summary::-webkit-details-marker {
     }
 }
 
+.login-page {
+    padding-top: 30px;
+}
+
 .account__login {
-    background: var(--body-background-color);
-    padding: 15px 25px;
-    border-radius: 0 0 5px 5px;
-    -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, .1);
-    box-shadow: 0 5px 30px rgba(0, 0, 0, .1);
     width: 415px;
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.box-2 {
+    background: var(--body-background-color);
     margin-bottom: 10px;
+    padding: 20px 25px;
+    border-radius: 6px;
+}
+
+.logo-login {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.logo-login img{
+    height: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -12018,9 +12041,6 @@ details>summary::-webkit-details-marker {
     margin-top: 15px;
 }
 
-@media only screen and (min-width:992px) {
-    .account__login--btn {}
-}
 
 .account__login--signup__text {
     text-align: center;
@@ -12030,6 +12050,9 @@ details>summary::-webkit-details-marker {
     justify-content: center;
     gap: 6px;
     flex-wrap: wrap;
+    background: var(--body-background-color);
+    padding: 10px 25px;
+    border-radius: 5px;
 }
 
 .account__login--signup__text a {
@@ -13385,7 +13408,7 @@ input[type=number]::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .title-page span {
@@ -14591,17 +14614,6 @@ em {
 .account__login--header {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.account__login--header a {
-    display: block;
-    margin-bottom: 15px;
-}
-
-.account__login--header a img {
-    height: 80px;
-    display: block;
-    margin: 0 auto;
 }
 
 .form-group {
@@ -16019,3 +16031,263 @@ em {
     background-color: #d5094a;
     border: 1px solid #d5094a;
 }
+
+.account-page {
+    display: flex;
+    gap: 40px;
+    margin-top: 35px;
+}
+
+.account-page .list-pages {
+    width: 250px;
+    min-width: 250px;
+    border-left: 1px solid #ecedeb;
+    padding-left: 15px;
+}
+
+
+.account-page .list-pages ul li:last-child {
+    border-top: 1px solid #ecedeb;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.account-page .list-pages ul li a {
+    width: 100%;
+    padding: 12px 8px;
+    color: #404553;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.account-page .list-pages ul li a:hover {
+    color: #000;
+}
+
+.account-page .list-pages ul li a svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.account-page .list-pages ul li a.active {
+    color: var(--secondary-color);
+    font-family: var(--body-fonts-semibold);
+}
+
+.account-page .content-account {
+    width: 100%;
+}
+
+.account-page .content-account .title-page {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.account-page .content-account .row .title-page {
+    font-size: 21px;
+}
+
+.account-page .content-account .p {
+    font-size: 16px;
+    color: #404553;   
+    margin-bottom: 35px;
+}
+
+.account-page .content-account .ps-form__group {
+    margin-bottom: 20px;
+}
+
+.account-page .content-account .ps-form__group .ps-form__input{
+    outline: none;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #fff;
+    color: #272a32;
+    font-size: 15px;
+    padding: 6px 10px;
+    height: auto;
+    min-width: unset;
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    font-family: var(--body-fonts-semibold);
+}
+
+.account-page .content-account .ps-form__group span{
+    color: #404553;
+}
+
+.account-page .content-account .ps-btn {
+    min-width: 200px;
+    font-size: 16px;
+    color: white;
+    background-color: #fd0251;
+    border: 1px solid #fd0251;
+    padding: 8px 15px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: initial;
+    width: auto;
+    height: 44px;
+}
+
+.account-page .content-account .ps-btn:hover {
+    background-color: #d5094a;
+    border: 1px solid #d5094a;
+}
+
+.account-page .content-account .new-address {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #d9d9d9;
+    padding: 5px 17px;
+    border-radius: 2px;
+    width: max-content;
+    font-family: var(--body-fonts-semibold);
+    margin-top: 15px;
+    color: #272a32;
+    font-size: 16px;
+}
+
+.account-page .content-account .new-address:hover {
+    color: #d5094a;
+}
+
+.account-page .content-account .list-addresses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.account-page .content-account .list-addresses li {
+    padding: 12px 15px;
+    border: 1px solid #d9d9d9;
+    display: flex;
+    gap: 15px;
+    min-width: 300px;
+    margin: 0;
+}
+
+.account-page .content-account .list-addresses li:hover {
+    border: 1px solid #d5094a;
+}
+
+.account-page .content-account .list-addresses li .radio-custom {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+}
+
+.account-page .content-account .list-addresses li .radio-custom::after {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.account-page .content-account .list-addresses li .dts-add {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.account-page .content-account .list-addresses li .dts-add label {
+    font-family: var(--body-fonts-semibold);
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #272a32;
+    line-height: 22px;
+}
+
+.account-page .content-account .list-addresses li .dts-add h5{
+    font-weight: normal;
+    font-size: 17px;
+    color: #272a32;
+    font-family: var(--body-fonts-semibold);
+    margin-bottom: 5px;
+}
+
+.account-page .content-account .list-addresses li .dts-add p {
+    margin-bottom: 0px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.account-page .content-account .list-addresses li .dts-add .ph-num {
+    margin: 5px 0 10px;
+    font-family: var(--body-fonts-semibold);
+}
+
+
+.account-page .content-account .list-addresses li .default--btns {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.account-page .content-account .list-addresses li .default--btns .default-adrs {
+    background: #f40853;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.account-page .content-account .list-addresses li .btns-actions {
+    display: flex;
+    gap: 5px;
+    margin-right: auto;
+}
+
+.account-page .content-account .list-addresses li .btns-actions button {
+    border: 1px solid #d9d9d9;
+    padding: 0px 10px;
+    width: max-content;
+    color: #404553;
+    background: #fff;
+    font-size: 14px;
+    font-family: var(--body-fonts-semibold);
+}
+
+.account-page .content-account .list-addresses li .btns-actions button:hover {
+    color: #d5094a;
+}
+
+.product-wishlist {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.product-wishlist .product__card .product__card--footer{
+    position: unset;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 15px;
+}
+
+.remove-form-wishlist {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    padding: 0px 10px;
+    border-radius: 2px;
+    width: max-content;
+    font-family: var(--body-fonts-semibold);
+    margin-top: 15px;
+    color: #272a32;
+    font-size: 15px;
+    background: #fff;
+}
+
+.remove-form-wishlist:hover {
+    color: #d5094a;
+}
+
