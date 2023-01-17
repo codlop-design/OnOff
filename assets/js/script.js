@@ -1,11 +1,11 @@
 "use strict";
-const preLoader = function () {
-    let preloaderWrapper = document.getElementById("preloader");
-    window.onload = () => {
-        preloaderWrapper.classList.add("loaded")
-    }
-};
-preLoader();
+// const preLoader = function () {
+//     let preloaderWrapper = document.getElementById("preloader");
+//     window.onload = () => {
+//         preloaderWrapper.classList.add("loaded")
+//     }
+// };
+// preLoader();
 var getSiblings = function (elem) {
         const siblings = [];
         let sibling = elem.parentNode.firstChild;
