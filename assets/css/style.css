@@ -4,7 +4,7 @@
     --primary-color: #212121;
     --secondary-color: #f40853;
     --foreground-color: #121416;
-    --foreground-sub-color: #898686;
+    --foreground-sub-color: #625c5c;
     --body-text-color: #000000;
     --text-white-color: #fff;
     --body-background-color: #fff;
@@ -12,8 +12,10 @@
     --bg-black-color: #000000;
     --bg-light-dark-color: #1a1818;
     --border-color: #E5E5E5;
-    --body-fonts: "Codlop", sans-serif;
-    --body-fonts-semibold: "Codlop-SemiBold", sans-serif;
+    --body-fonts:
+    "Codlop", sans-serif;
+    --body-fonts-semibold:
+    "Codlop-SemiBold", sans-serif;
     --body-font-size: 1.5rem;
     --body-font-weight: 400;
     --body-line-height: 2.8rem;
@@ -25,11 +27,13 @@
 @font-face {
     font-family: 'Codlop';
     src: url(../fonts/Bahij_Plain.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Codlop-SemiBold';
     src: url(../fonts/Bahij_SemiBold.ttf);
+    font-display: swap;
 }
 
 *,
@@ -2146,14 +2150,30 @@ body.overlay__active::before {
 .header__account--btn {
     position: relative;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .header__account--btn:hover {
     color: #f40853
 }
 
-.header__account--btn>* {
-    pointer-events: none
+.account-btn-text {
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.header__account--btn svg {
+
+    width: 30px;
+
+    height: 30px;
 }
 
 @media only screen and (min-width:576px) {
@@ -2179,8 +2199,8 @@ body.overlay__active::before {
 
 .items__count {
     position: absolute;
-    right: 1.8rem;
-    top: -4px;
+    right: -8px;
+    top: -2px;
     width: 1.7rem;
     height: 1.7rem;
     font-size: 1.1rem;
@@ -2192,15 +2212,15 @@ body.overlay__active::before {
 }
 
 .minicart__btn--text {
-    padding-right: 2rem;
-
-    font-size: 1.5rem;
-    line-height: 1.6rem
+    padding-right: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
 }
 
 .minicart__btn--text__price {
-    font-size: 1.2rem;
-    color: #f40853
+    font-size: 13px;
+    color: #ffffff;
 }
 
 @media only screen and (max-width:991px) {
@@ -5005,12 +5025,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .rating__icon {
-    color: #f40853
+    color: #f40853;
+    font-size: 13px;
 }
 
 .rating__review--text {
     font-size: 1.2rem;
-    ;
     color: var(--foreground-sub-color)
 }
 
@@ -11982,20 +12002,39 @@ details>summary::-webkit-details-marker {
 }
 
 .login-page {
-    padding-top: 30px;
+    display: flex;
+    gap: 20px;
 }
 
 .account__login {
-    width: 415px;
+    width: 450px;
+    min-width: 450px;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px;
+}
+
+.animation-svg {
+    
+width: 100%;
+    
+min-height: 100vh;
+    
+display: flex;
+    
+align-items: center;
+}
+
+.animation-svg svg {
+    height: 700px;
+    display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
 }
 
 .box-2 {
-    background: var(--body-background-color);
-    margin-bottom: 10px;
-    padding: 20px 25px;
-    border-radius: 0;
 }
 
 .logo-login {
@@ -12050,9 +12089,7 @@ details>summary::-webkit-details-marker {
     justify-content: center;
     gap: 6px;
     flex-wrap: wrap;
-    background: var(--body-background-color);
-    padding: 10px 25px;
-    border-radius: 0;
+    margin-top: 25px;
 }
 
 .account__login--signup__text a {
@@ -14348,6 +14385,13 @@ em {
     margin-bottom: 9px;
     color: #444956;
     font-family: var(--body-fonts-semibold);
+}
+
+.store-name img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    object-fit: contain;
 }
 
 .line {
