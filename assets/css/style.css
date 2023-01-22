@@ -13,9 +13,9 @@
     --bg-light-dark-color: #1a1818;
     --border-color: #E5E5E5;
     --body-fonts:
-    "Codlop", sans-serif;
+        "Codlop", sans-serif;
     --body-fonts-semibold:
-    "Codlop-SemiBold", sans-serif;
+        "Codlop-SemiBold", sans-serif;
     --body-font-size: 1.5rem;
     --body-font-weight: 400;
     --body-line-height: 2.8rem;
@@ -1844,7 +1844,7 @@ body.overlay__active::before {
 }
 
 .main__header--inner {
-    gap: 1rem
+    gap: 15px;
 }
 
 .main__logo--link {
@@ -2166,7 +2166,7 @@ body.overlay__active::before {
     padding-right: 5px;
     font-size: 14px;
     line-height: 20px;
-    color: #fff;
+    color: #ebebeb;
 }
 
 .header__account--btn svg {
@@ -2174,6 +2174,8 @@ body.overlay__active::before {
     width: 30px;
 
     height: 30px;
+
+    color: #ebebeb;
 }
 
 @media only screen and (min-width:576px) {
@@ -2215,7 +2217,7 @@ body.overlay__active::before {
     padding-right: 6px;
     font-size: 14px;
     line-height: 20px;
-    color: #fff;
+    color: #ebebeb;
 }
 
 .minicart__btn--text__price {
@@ -3269,7 +3271,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header__menu.style3 {
-    padding-right: 0
+    padding-right: 0;
+    margin: 0 auto;
 }
 
 .language__currency.style3 {
@@ -4898,7 +4901,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     height: 3.5rem;
     line-height: 3.5rem;
-    border-radius: 0;
+    border-radius: 5px;
     text-align: center;
     padding: 0 1.5rem;
     font-weight: normal;
@@ -12018,14 +12021,14 @@ details>summary::-webkit-details-marker {
 }
 
 .animation-svg {
-    
-width: 100%;
-    
-min-height: 100vh;
-    
-display: flex;
-    
-align-items: center;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
 }
 
 .animation-svg svg {
@@ -12034,8 +12037,7 @@ align-items: center;
     margin: 0 auto;
 }
 
-.box-2 {
-}
+.box-2 {}
 
 .logo-login {
     display: block;
@@ -13058,7 +13060,7 @@ align-items: center;
 .search-div input {
     width: 100%;
     padding: 8px 15px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 0;
     padding-left: 50px;
     background: #000000cc;
@@ -13077,7 +13079,7 @@ align-items: center;
     font-size: 18px;
     background: #fd0251;
     color: #fff;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 5px 20px;
     outline: unset;
     box-shadow: unset;
@@ -14177,7 +14179,7 @@ input[type=number]::-webkit-inner-spin-button {
     color: #f40853;
     background: #fff;
     padding: 6px 15px;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 17px;
     display: flex;
     align-items: center;
@@ -14203,7 +14205,7 @@ input[type=number]::-webkit-inner-spin-button {
     color: #fff;
     background: #f40853;
     padding: 6px 15px;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 17px;
     font-family: var(--body-fonts-semibold);
     display: flex;
@@ -14738,6 +14740,7 @@ em {
     padding: 15px;
     background: #fff;
     margin-bottom: 12px;
+    border-radius: 5px;
 }
 
 .cart-sec .cart-dts ul li:last-child {
@@ -14870,7 +14873,7 @@ em {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #ecedeb;
-    padding-top: 10px;
+    padding-top: 12px;
     margin-top: auto;
 }
 
@@ -14946,7 +14949,7 @@ em {
     font-size: 17px;
     color: #404553;
     border: 1px solid #ddd;
-    border-radius: 0;
+    border-radius: 4px;
 }
 
 .outline-dark:hover {
@@ -14968,7 +14971,6 @@ em {
 .coupon input {
     border: 1px solid #ddd;
     padding: 4px 8px;
-    border-radius: 0;
     width: 100%;
 }
 
@@ -14978,7 +14980,6 @@ em {
 
 .coupon button {
     padding: 2px 10px;
-    border-radius: 0;
     background: #fff;
     font-size: 15px;
     border: 1px solid #ddd;
@@ -14995,6 +14996,7 @@ em {
     top: 15px;
     background: #fff;
     padding: 20px 25px;
+    border-radius: 5px;
 }
 
 .totals-div h5 {
@@ -15058,7 +15060,7 @@ em {
     display: block;
     margin-top: 20px;
     text-align: center;
-    border-radius: 0;
+    border-radius: 5px;
     border: 1px solid #f40853;
     color: #fff;
     background: #f40853;
@@ -15154,6 +15156,7 @@ em {
     background: #fff;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .checkout-parts .list-steps>li:last-child {
@@ -15315,6 +15318,7 @@ em {
     background: #fff;
     font-size: 14px;
     font-family: var(--body-fonts-semibold);
+    border-radius: 3px;
 }
 
 .checkout-parts .list-steps li .choose--address li .btns-actions button:hover {
@@ -15329,7 +15333,7 @@ em {
     padding: 5px 20px;
     min-width: 250px;
     border: 1px solid #f40853;
-    border-radius: 0;
+    border-radius: 5px;
     margin-top: 16px;
     transition: .3s;
     position: sticky;
@@ -15370,6 +15374,7 @@ em {
 .checkout-parts .left-part .totals-div {
     background: #fff;
     padding: 20px 25px;
+    border-radius: 5px;
 }
 
 .checkout-parts .left-part .line {
@@ -15771,7 +15776,7 @@ em {
     background: #fff;
     font-size: 16px;
     font-family: var(--body-fonts-semibold);
-    border-radius: 0;
+    border-radius: 3px;
 }
 
 .modal .modal-footer .btn-save-modal {
@@ -16626,4 +16631,27 @@ display: none;
     border-top: 1px solid #ddd;
     padding-top: 15px;
     margin-top: 15px;
+}
+
+.change-region {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.change-region svg {
+    fill: #EBEBEB;
+    width: 25px;
+    height: 25px;
+}
+
+.change-region p {
+    color: #ebebeb;
+    min-width: max-content;
+    line-height: 20px;
+}
+
+.change-region p em {
+    display: block;
 }
