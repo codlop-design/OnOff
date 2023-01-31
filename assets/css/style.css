@@ -1257,7 +1257,7 @@ select {
 .product__badge {
     width: max-content;
     font-size: 13px;
-    background: #0d8985;
+    background: #0c7673;
     color: var(--text-white-color);
     position: absolute;
     top: 0;
@@ -1279,7 +1279,7 @@ select {
 }
 
 .current__price {
-    color: #f40853;
+    color: #e50a4f;
     line-height: 1.8rem;
     font-size: 18px;
 }
