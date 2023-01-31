@@ -10,7 +10,7 @@ scrollTop && (scrollTop.addEventListener("click", (function () {
     window.scrollY > 300 ? scrollTop.classList.add("active") : scrollTop.classList.remove("active")
 })));
 
-   var swiper = new Swiper(".product__swiper--activation", {
+var swiper = new Swiper(".product__swiper--activation", {
         slidesPerView: 6,
         loop: 0,
         clickable: !0,
@@ -36,12 +36,12 @@ scrollTop && (scrollTop.addEventListener("click", (function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
         }
-    }),
+    });
 
     swiper = new Swiper(".brands-cars", {
         autoplay: {
             delay: 1100,
-          },
+        },
         loop: true,
         spaceBetween: 20,
         breakpoints: {
@@ -67,49 +67,76 @@ scrollTop && (scrollTop.addEventListener("click", (function () {
         }
     });
 
-    $(".brands-cars").hover(function() {
-        (this).swiper.autoplay.stop();
-    }, function() {
-        (this).swiper.autoplay.start();
-    });
+$(".brands-cars").hover(function () {
+    (this).swiper.autoplay.stop();
+}, function () {
+    (this).swiper.autoplay.start();
+});
 
-    swiper = new Swiper(".tajir", {
-        autoplay: {
-            delay: 1000,
-          },
-        loop: true,
-        spaceBetween: 20,
-        breakpoints: {
-            1024: {
-                slidesPerView: 8
-            },
-            992: {
-                slidesPerView: 7
-            },
-            768: {
-                slidesPerView: 6
-            },
-            480: {
-                slidesPerView: 4
-            },
-            0: {
-                slidesPerView: 2
-            }
+swiper = new Swiper(".tajir", {
+    autoplay: {
+        delay: 1000,
+    },
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        1024: {
+            slidesPerView: 8
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+        992: {
+            slidesPerView: 7
+        },
+        768: {
+            slidesPerView: 6
+        },
+        480: {
+            slidesPerView: 4
+        },
+        0: {
+            slidesPerView: 2
         }
-    });
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+});
 
-    $(".tajir").hover(function() {
-        (this).swiper.autoplay.stop();
-    }, function() {
-        (this).swiper.autoplay.start();
-    });
+$(".tajir").hover(function () {
+    (this).swiper.autoplay.stop();
+}, function () {
+    (this).swiper.autoplay.start();
+});
 
-    
-    // thumbs-img
+var swiper = new Swiper(".categories__inner", {
+    slidesPerView: 7,
+    loop: 0,
+    clickable: !0,
+    spaceBetween: 30,
+    breakpoints: {
+        1024: {
+            slidesPerView: 7
+        },
+        992: {
+            slidesPerView: 5
+        },
+        768: {
+            slidesPerView: 3
+        },
+        480: {
+            slidesPerView: 2
+        },
+        0: {
+            slidesPerView: 1
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+});
+
+// thumbs-img
 const galleryThumbs = new Swiper('.thumbs .swiper', {
     direction: 'vertical',
     spaceBetween: 10,
@@ -140,17 +167,17 @@ const galleryMain = new Swiper('.view-div .swiper', {
 // galleryMain.on('slideChangeTransitionStart', function() {
 //     galleryThumbs.slideTo(galleryMain.activeIndex);
 //   });
-  
+
 //   galleryThumbs.on('transitionStart', function(){
 //     galleryMain.slideTo(galleryThumbs.activeIndex);
 //   });
 
 
-$(document).on('change','#sign-user', function(){
+$(document).on('change', '#sign-user', function () {
     $('.store-inputs').hide();
 });
 
-$(document).on('change','#sign-tajer', function(){
+$(document).on('change', '#sign-tajer', function () {
     $('.store-inputs').show();
 });
 
@@ -194,3 +221,22 @@ $(document).on('change', '.checkout-tab #payzaty', function () {
         $('.checkout-tab .hint').hide();
     }
 });
+
+    var buttonPlus = $(".qty-btn-plus");
+    var buttonMinus = $(".qty-btn-minus");
+    var incrementPlus = buttonPlus.click(function () {
+        var $n = $(this)
+            .parent(".p-quentity")
+            .find(".input-qty");
+        $n.val(Number($n.val()) + 1);
+    });
+
+    var incrementMinus = buttonMinus.click(function () {
+        var $n = $(this)
+            .parent(".p-quentity")
+            .find(".input-qty");
+        var amount = Number($n.val());
+        if (amount > 1) {
+            $n.val(amount - 1);
+        }
+    });
