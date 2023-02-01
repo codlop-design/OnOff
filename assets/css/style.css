@@ -6037,3 +6037,27 @@ input[type=range]::-webkit-slider-runnable-track {
 .single__widget .post__article--content .meta__deta {
     color: #3e3d3d;
 }
+
+.btm-footer {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.btm-footer .maroof-link {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.social-footer {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: max-content;
+}
+
+.social-footer li a {
+    font-size: 28px;
+    color: #28324e;
+}
