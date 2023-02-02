@@ -11,61 +11,61 @@ scrollTop && (scrollTop.addEventListener("click", (function () {
 })));
 
 var swiper = new Swiper(".product__swiper--activation", {
-        slidesPerView: 6,
-        loop: 0,
-        clickable: !0,
-        spaceBetween: 30,
-        breakpoints: {
-            1024: {
-                slidesPerView: 6
-            },
-            992: {
-                slidesPerView: 4
-            },
-            768: {
-                slidesPerView: 3
-            },
-            480: {
-                slidesPerView: 2
-            },
-            0: {
-                slidesPerView: 1
-            }
+    slidesPerView: 6,
+    loop: 0,
+    clickable: !0,
+    spaceBetween: 30,
+    breakpoints: {
+        1024: {
+            slidesPerView: 6
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+        992: {
+            slidesPerView: 4
+        },
+        768: {
+            slidesPerView: 3
+        },
+        480: {
+            slidesPerView: 2
+        },
+        0: {
+            slidesPerView: 1
         }
-    });
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+});
 
-    swiper = new Swiper(".brands-cars", {
-        autoplay: {
-            delay: 1100,
+var swiper = new Swiper(".brands-cars", {
+    autoplay: {
+        delay: 1000,
+    },
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        1024: {
+            slidesPerView: 8
         },
-        loop: true,
-        spaceBetween: 20,
-        breakpoints: {
-            1024: {
-                slidesPerView: 8
-            },
-            992: {
-                slidesPerView: 7
-            },
-            768: {
-                slidesPerView: 6
-            },
-            480: {
-                slidesPerView: 4
-            },
-            0: {
-                slidesPerView: 2
-            }
+        992: {
+            slidesPerView: 7
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+        768: {
+            slidesPerView: 6
+        },
+        480: {
+            slidesPerView: 4
+        },
+        0: {
+            slidesPerView: 2
         }
-    });
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+});
 
 $(".brands-cars").hover(function () {
     (this).swiper.autoplay.stop();
@@ -73,9 +73,9 @@ $(".brands-cars").hover(function () {
     (this).swiper.autoplay.start();
 });
 
-swiper = new Swiper(".tajir", {
+var swiper = new Swiper(".tajir", {
     autoplay: {
-        delay: 1000,
+        delay: 1100,
     },
     loop: true,
     spaceBetween: 20,
@@ -222,21 +222,21 @@ $(document).on('change', '.checkout-tab #payzaty', function () {
     }
 });
 
-    var buttonPlus = $(".qty-btn-plus");
-    var buttonMinus = $(".qty-btn-minus");
-    var incrementPlus = buttonPlus.click(function () {
-        var $n = $(this)
-            .parent(".p-quentity")
-            .find(".input-qty");
-        $n.val(Number($n.val()) + 1);
-    });
+var buttonPlus = $(".qty-btn-plus");
+var buttonMinus = $(".qty-btn-minus");
+var incrementPlus = buttonPlus.click(function () {
+    var $n = $(this)
+        .parent(".p-quentity")
+        .find(".input-qty");
+    $n.val(Number($n.val()) + 1);
+});
 
-    var incrementMinus = buttonMinus.click(function () {
-        var $n = $(this)
-            .parent(".p-quentity")
-            .find(".input-qty");
-        var amount = Number($n.val());
-        if (amount > 1) {
-            $n.val(amount - 1);
-        }
-    });
+var incrementMinus = buttonMinus.click(function () {
+    var $n = $(this)
+        .parent(".p-quentity")
+        .find(".input-qty");
+    var amount = Number($n.val());
+    if (amount > 1) {
+        $n.val(amount - 1);
+    }
+});
