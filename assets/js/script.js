@@ -16,20 +16,28 @@ var swiper = new Swiper(".product__swiper--activation", {
     clickable: !0,
     spaceBetween: 30,
     breakpoints: {
-        1024: {
+        1400: {
             slidesPerView: 6
         },
-        992: {
-            slidesPerView: 4
+        1100: {
+            slidesPerView: 5,
+            spaceBetween: 25
         },
-        768: {
-            slidesPerView: 3
+        900: {
+            slidesPerView: 4,
+            spaceBetween: 15
         },
-        480: {
-            slidesPerView: 2
+        650: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 5
         },
         0: {
-            slidesPerView: 1
+            slidesPerView: 1,
+            spaceBetween: 0
         }
     },
     navigation: {
@@ -45,7 +53,7 @@ var swiper = new Swiper(".brands-cars", {
     loop: true,
     spaceBetween: 20,
     breakpoints: {
-        1024: {
+        1200: {
             slidesPerView: 8
         },
         992: {
@@ -54,11 +62,14 @@ var swiper = new Swiper(".brands-cars", {
         768: {
             slidesPerView: 6
         },
+        576: {
+            slidesPerView: 5
+        },
         480: {
             slidesPerView: 4
         },
-        0: {
-            slidesPerView: 2
+        320: {
+            slidesPerView: 3
         }
     },
     navigation: {
@@ -80,7 +91,7 @@ var swiper = new Swiper(".tajir", {
     loop: true,
     spaceBetween: 20,
     breakpoints: {
-        1024: {
+        1200: {
             slidesPerView: 8
         },
         992: {
@@ -89,11 +100,14 @@ var swiper = new Swiper(".tajir", {
         768: {
             slidesPerView: 6
         },
+        576: {
+            slidesPerView: 5
+        },
         480: {
             slidesPerView: 4
         },
-        0: {
-            slidesPerView: 2
+        320: {
+            slidesPerView: 3
         }
     },
     navigation: {
@@ -114,20 +128,25 @@ var swiper = new Swiper(".categories__inner", {
     clickable: !0,
     spaceBetween: 30,
     breakpoints: {
-        1024: {
-            slidesPerView: 7
+        1400: {
+            slidesPerView: 7,
+            spaceBetween: 25
         },
         992: {
-            slidesPerView: 5
+            slidesPerView: 5,
+            spaceBetween: 20
         },
         768: {
-            slidesPerView: 3
+            slidesPerView: 4,
+            spaceBetween: 15
         },
         480: {
-            slidesPerView: 2
+            slidesPerView: 3,
+            spaceBetween: 10
         },
-        0: {
-            slidesPerView: 1
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 10
         }
     },
     navigation: {
