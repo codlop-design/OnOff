@@ -1114,27 +1114,29 @@
     <script src="assets/js/plugins/image-zoom/js-image-zoom.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-        // zoom img
-        var options1 = {
-            offset: {
-                vertical: 0,
-                horizontal: 10
+            if ($(window).width() > 768) {
+                // zoom img
+                var options1 = {
+                    offset: {
+                        vertical: 0,
+                        horizontal: 10
+                    }
+                };
+
+                var options2 = {
+                    fillContainer: true,
+                    offset: {
+                        vertical: 0,
+                        horizontal: 10
+                    },
+                    "zoomPosition": "left",
+                };
+
+                new ImageZoom(document.getElementById("img-1"), options2);
+                new ImageZoom(document.getElementById("img-2"), options2);
+                new ImageZoom(document.getElementById("img-3"), options2);
+                new ImageZoom(document.getElementById("img-4"), options2);
             }
-        };
-
-        var options2 = {
-            fillContainer: true,
-            offset: {
-                vertical: 0,
-                horizontal: 10
-            },
-            "zoomPosition": "left",
-        };
-
-        new ImageZoom(document.getElementById("img-1"), options2);
-        new ImageZoom(document.getElementById("img-2"), options2);
-        new ImageZoom(document.getElementById("img-3"), options2);
-        new ImageZoom(document.getElementById("img-4"), options2);
     </script>
 </body>
 
