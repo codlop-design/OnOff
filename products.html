@@ -24,9 +24,7 @@
             <div class="container-fluid">
                 <div class="main__header--inner position__relative">
                     <div class="offcanvas__header--menu__open">
-                        <div class="offcanvas__header--menu__open--btn">
-                            <i class="fi fi-rs-burger-menu"></i>
-                        </div>
+                        <i class="bi bi-list"></i>
                     </div>
                     <div class="main__logo">
                         <a class="main__logo--link" href="index.html">
@@ -56,8 +54,8 @@
                                             <span class="items__count">0</span>
                                         </a>
                                     </li>
-                                    <li class="header__account--items">
-                                        <a class="header__account--btn" href="#">
+                                    <li class="header__account--items wishlist-li">
+                                        <a class="header__account--btn" href="wishlist.html">
                                             <i class="bi bi-heart"></i>
                                             <div class="account-btn-text">
                                                 المفضلة
@@ -65,7 +63,7 @@
                                         </a>
                                     </li>
                                     <li class="header__account--items">
-                                        <a class="header__account--btn" href="#">
+                                        <a class="header__account--btn" href="products.html">
                                             <i class="bi bi-bag"></i>
                                             <div class="account-btn-text">
                                                 المتجر
@@ -80,11 +78,20 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="header__account--items">
+                                    <li class="header__account--items login-li">
                                         <a class="header__account--btn" href="login.html">
                                             <i class="bi bi-person-circle"></i>
                                             <div class="account-btn-text">
                                                 تسجيل الدخول
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__account--items cart-mobile">
+                                        <a class="header__account--btn" href="cart.html">
+                                            <i class="bi bi-cart2"></i>
+                                            <span class="items__count">0</span>
+                                            <div class="account-btn-text">
+                                                0.00 ر.س
                                             </div>
                                         </a>
                                     </li>
@@ -260,7 +267,7 @@
                                 </li>
                             </ul>
                             <a href="javascript:;" class="show-more-less">
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-plus-lg"></i>
                                 عرض المزيد
                             </a>
                         </div>
@@ -309,7 +316,7 @@
                                 </li>
                             </ul>
                             <a href="javascript:;" class="show-more-less">
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-plus-lg"></i>
                                 عرض المزيد
                             </a>
                         </div>
@@ -358,7 +365,7 @@
                                 </li>
                             </ul>
                             <a href="javascript:;" class="show-more-less">
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-plus-lg"></i>
                                 عرض المزيد
                             </a>
                         </div>
@@ -385,7 +392,7 @@
                                 </li>
                             </ul>
                             <a href="javascript:;" class="show-more-less">
-                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-plus-lg"></i>
                                 عرض المزيد
                             </a>
                         </div>
@@ -432,6 +439,10 @@
                             ماركات عالمية لدى منصة اون اوف السعودية تشكيلة رائعة من مكيفات سبليت رخيصة بسعر رائع .
                         </p>
                         <div class="ps-categogy__wrapper">
+                            <div class="filter-menu">
+                                <i class="bi bi-funnel"></i>
+                                تصفية
+                            </div>
                             <div class="ps-categogy__num">
                                 <p><span>1-20</span> من <span>244</span> نتيجة بحث</p>
                             </div>
@@ -445,8 +456,6 @@
                                         <option value="price-desc">ترتيب حسب: الأعلى سعراً للأدنى</option>
                                     </select>
                                 </form>
-                            </div>
-                            <div class="ps-categogy__show">
                                 <form>
                                     <select class="form-select">
                                         <option value="20" selected="selected">عرض 20</option>
@@ -460,7 +469,8 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="products-grid products-grid-5">
+                        <div
+                            class="products-grid products-grid-5 products-grid-4 products-grid-3 products-grid-2 products-grid-1">
                             <article class="product__card">
                                 <div class="product__card--thumbnail">
                                     <a class="product__card--thumbnail__link display-block" href="product-details.html">
@@ -1369,14 +1379,11 @@
                             </article>
                         </div>
                         <ul class="pagination">
-                            <li class="page-item disabled"><a class="page-link" tabindex="-1">السابق</a>
-                            </li>
                             <li class="page-item active"><a class="page-link" tabindex="0">1</a></li>
                             <li class="page-item"><a class="page-link" tabindex="0">2</a></li>
                             <li class="page-item"><a class="page-link" tabindex="0">3</a></li>
                             <li class="page-item disabled"><a class="page-link" tabindex="0">…</a></li>
                             <li class="page-item"><a class="page-link" tabindex="0">10</a></li>
-                            <li class="page-item"><a class="page-link" tabindex="0">التالي</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1502,6 +1509,112 @@
     <button id="scroll__top">
         <i class="bi bi-caret-up-fill"></i>
     </button>
+
+    <nav class="all-menu">
+        <a class="login-link" href="login.html">
+            <i class="bi bi-person-circle"></i>
+            مرحبا بك , تسجيل الدخول
+        </a>
+        <div class="over-auto">
+            <div class="main-catgeory">
+                <h3>تسوق حسب القسم</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            تكييف وتدفئه
+                            <i class="bi bi-caret-left-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            ثلاجات و فريزرات
+                            <i class="bi bi-caret-left-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            الغسالات والنشافات
+                            <i class="bi bi-caret-left-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            الميكرويف والأفرن
+                            <i class="bi bi-caret-left-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            أدوات المطبخ
+                            <i class="bi bi-caret-left-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="secondary-catgeory">
+                <a href="#" class="back-menu">
+                    <i class="bi bi-arrow-right"></i>
+                    العودة للقائمة الرئيسية
+                </a>
+                <h3>تكييف وتدفئه</h3>
+                <ul>
+                    <li><a href="products.html">مكيف اسبلت</a></li>
+                    <li><a href="products.html">مكيف شباك</a></li>
+                    <li><a href="products.html">مكيف دولابي</a></li>
+                    <li><a href="products.html">مكيف كاسيت</a></li>
+                    <li><a href="products.html">مكيف دكت</a></li>
+                    <li><a href="products.html">مكيف معلق جداري</a></li>
+                    <li><a href="products.html">مكيف نقال</a></li>
+                    <li><a href="products.html">دفاية</a></li>
+                </ul>
+            </div>
+            <div class="help-settings">
+                <h3>البيانات والتواصل</h3>
+                <a href="about.html">
+                    <i class="bi bi-info-circle"></i>
+                    معلومات عن OnOff
+                </a>
+                <a href="contact.html">
+                    <i class="bi bi-telephone"></i>
+                    تواصل معنا
+                </a>
+                <ul class="menu-profile">
+                    <li>
+                        <a href="edit-account.html">
+                            <i class="bi bi-person-circle"></i>
+                            حسابي</a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <i class="bi bi-bag"></i>
+                            طلباتي</a>
+                    </li>
+                    <li>
+                        <a href="edit-address.html" class="active">
+                            <i class="bi bi-geo-alt"></i>
+                            عناويني</a>
+                    </li>
+                    <li>
+                        <a href="wishlist.html">
+                            <i class="bi bi-heart"></i>
+                            المفضلة</a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <i class="bi bi-box-arrow-right"></i>
+                            تسجيل الخروج</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay-menu">
+        <i class="bi bi-x-lg close-menu"></i>
+    </div>
+
+    <div class="overlay-filter">
+        <i class="bi bi-x-lg close-filter"></i>
+    </div>
 
     <script src="assets/js/plugins/jquery.min.js"></script>
     <script src="assets/js/vendor/popper.js"></script>
