@@ -567,8 +567,7 @@ select {
 
 .main__logo--img {
     display: block;
-    height: 100px;
-    margin-top: -10px;
+    height: 95px;
 }
 
 .main__logo--title {
@@ -627,6 +626,7 @@ select {
     align-items: center;
     color: #fff !important;
     gap: 5px;
+    flex-direction: row-reverse;
 }
 
 .header__account--btn:hover {
@@ -661,8 +661,8 @@ select {
 
 .items__count {
     position: absolute;
-    right: -10px;
-    top: -5px;
+    right: -8px;
+    top: -3px;
     width: 1.7rem;
     height: 1.7rem;
     font-size: 1.1rem;
@@ -686,8 +686,10 @@ select {
 
 .header__menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 0 15px;
+    margin-top: -5px;
 }
 
 .header__menu.header__sticky--block {
@@ -728,6 +730,7 @@ select {
     color: #ffffff !important;
     display: flex;
     align-items: center;
+    padding: 8px 0 10px;
 }
 
 .header__menu--link::before {
@@ -1455,6 +1458,12 @@ select {
     object-fit: contain;
     width: 100%;
     padding: 5px;
+    transition: .3s;
+}
+
+.brands-cars .swiper-slide img:hover,
+.tajir .swiper-slide img:hover {
+    transform: scale(1.2);
 }
 
 .brands-cars .swiper__nav--btn {
@@ -1518,12 +1527,12 @@ select {
 .logos-div {
     display: flex;
     gap: 4px;
+    flex-direction: column;
 }
 
 .logos-div img {
     width: 100%;
-    height: 12px;
-    object-fit: contain;
+    height: 16px;
 }
 
 .more-products {
@@ -1566,8 +1575,8 @@ select {
 .page-sec {
     padding: 20px 0;
     background: #fff;
-    min-height: calc(100vh - 720px);
-    margin-top: 110px;
+    min-height: calc(100vh - 572px);
+    padding-top: 150px;
 }
 
 .page-sec.no-bg {
@@ -5066,19 +5075,6 @@ display: none;
     margin-top: 15px;
 }
 
-.change-region {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    min-width: max-content;
-    color: #fff;
-}
-
-.change-region i {
-    font-size: 24px;
-}
-
 .change-region p {
     min-width: max-content;
     line-height: 22px;
@@ -5135,7 +5131,7 @@ display: none;
 
 .header__section {
     position: absolute;
-    top: 38px;
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
@@ -5193,8 +5189,8 @@ display: none;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
-    padding-top: 0;
+    padding: 8px 0 0;
+    gap: 10px;
 }
 
 .top-part {
@@ -5202,7 +5198,7 @@ display: none;
     gap: 20px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .cart--btn {
@@ -5211,6 +5207,8 @@ display: none;
     display: flex;
     gap: 2px;
     align-items: center;
+    min-width: max-content;
+    margin-right: 30px;
 }
 
 .cart--btn i {
@@ -5219,6 +5217,7 @@ display: none;
 
 .notifications {
     border: 0;
+    margin-right: 25px !important;
 }
 
 .notifications a {
@@ -5397,10 +5396,7 @@ input[type=range]::-webkit-slider-runnable-track {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4px 30px;
-    gap: 15px;
-    background: #18212c;
-    /* background: linear-gradient(90deg, #235cbf, #00a98f); */
+    gap: 10px;
 }
 
 .maroof img {
@@ -5410,6 +5406,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .maroof p {
     font-size: 16px;
     color: #e7e7e7;
+    margin: 0;
 }
 
 .social {
@@ -6158,10 +6155,6 @@ body.no-scroll {
         padding-left: 15px;
     }
 
-    .maroof {
-        padding: 4px 15px;
-    }
-
     .main__logo--img {
         height: 80px;
     }
@@ -6177,10 +6170,6 @@ body.no-scroll {
         height: 30px;
     }
 
-    .top-part {
-        margin-bottom: 10px;
-    }
-
     .header__menu--link {
         font-size: 15px;
     }
@@ -6190,7 +6179,8 @@ body.no-scroll {
     }
 
     .top-bar {
-        padding-bottom: 6px;
+    gap: 5px;
+    padding: 7px 0 0;
     }
 
     .main__header--inner {
@@ -6467,6 +6457,14 @@ body.no-scroll {
     .parts-page.store-products .products-grid.products-grid-4 {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .header__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        margin-top: 0;
+    }
 }
 
 @media (max-width:1100px) {
@@ -6480,10 +6478,6 @@ body.no-scroll {
 
     .main__header--inner {
         gap: 8px;
-    }
-
-    .change-region i {
-        font-size: 20px;
     }
 
     .header__account--items {
@@ -6507,10 +6501,6 @@ body.no-scroll {
     .items__count {
         right: -7px;
         top: -4px;
-    }
-
-    .top-part {
-        margin-bottom: 8px;
     }
 
     .cart-sec .cart-total {
@@ -6753,8 +6743,8 @@ body.no-scroll {
         border: 0;
     }
 
-    .header__account--btn i,
-    .change-region i {
+    .header__account--btn i
+     {
         font-size: 24px;
     }
 
@@ -7214,12 +7204,19 @@ body.no-scroll {
         font-size: 22px;
     }
 
+    .change-region p {
+        display: none;
+    }
+
+    .notifications {
+        margin-right: 0px !important;
+    }
+
 }
 
 @media (max-width:768px) {
 
-    .header__account--btn i,
-    .change-region i {
+    .header__account--btn i{
         font-size: 20px;
     }
 
@@ -7231,7 +7228,6 @@ body.no-scroll {
 
     .maroof {
         gap: 10px;
-        padding: 2px 15px;
     }
 
     .maroof img {
@@ -7240,10 +7236,6 @@ body.no-scroll {
 
     .maroof p {
         font-size: 14px;
-    }
-
-    .header__section {
-        top: 32px;
     }
 
     .offcanvas__header--menu__open {
@@ -7256,16 +7248,8 @@ body.no-scroll {
         margin-top: 0;
     }
 
-    .change-region p {
-        display: none;
-    }
-
     .top-part {
         justify-content: flex-end;
-    }
-
-    .change-region {
-        margin-left: 5px;
     }
 
     .items__count {
@@ -7692,6 +7676,10 @@ body.no-scroll {
     .store-profile .info-store h3 {
         font-size: 20px;
         margin-bottom: 7px;
+    }
+
+    .maroof p {
+        display: none;
     }
 
 }
@@ -8398,10 +8386,6 @@ body.no-scroll {
         gap: 5px;
     }
 
-    .change-region {
-        margin-left: 2px;
-    }
-
     .container-fluid {
         padding-right: 10px;
         padding-left: 10px;
@@ -8835,5 +8819,4 @@ body.no-scroll {
     .parts-page .ps-categogy__wrapper .form-select {
         max-width: 188px;
     }
-
 }
