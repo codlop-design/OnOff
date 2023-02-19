@@ -5181,6 +5181,7 @@ display: none;
 
 .header__account {
     min-width: max-content;
+    margin-right: 170px;
 }
 
 .main__logo {
@@ -5198,7 +5199,6 @@ display: none;
 .top-part {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
 }
@@ -5948,6 +5948,12 @@ body.no-scroll {
 
 /* onoff responsive */
 
+@media (max-width:1440px) {
+    .header__account {
+        margin-right: 45px;
+    }
+}
+
 @media (max-width:1400px) {
     .checkout-parts {
         gap: 20px;
@@ -6470,6 +6476,14 @@ body.no-scroll {
         align-items: center;
         padding: 0 15px;
         margin-top: 0;
+    }
+
+    .header__account {
+        margin-right: 0;
+    }
+
+    .top-part {
+        justify-content: space-between;
     }
 }
 
