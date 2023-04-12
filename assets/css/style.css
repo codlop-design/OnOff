@@ -824,6 +824,7 @@ select {
     position: relative;
     width: 100%;
     display: block;
+    padding-bottom: 55px;
 }
 
 .product__card--thumbnail__img {
@@ -5116,6 +5117,32 @@ display: none;
     left: 6px;
     top: 6px;
     font-size: 16px;
+}
+
+.activation-request {
+  position: absolute;
+  bottom: 35px;
+  background: #ceedce;
+  border-radius: 50px;
+  color: #2b6c2d !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  padding-left: 34px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border: 1px solid #96cb98;
+  line-height: 24px;
+  width: max-content;
+}
+
+.activation-request i{
+  position: absolute;
+  left: -1px;
+  color: #368d39;
+  font-size: 26px;
 }
 
 .available-place {
